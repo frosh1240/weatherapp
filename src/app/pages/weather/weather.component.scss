@@ -1,0 +1,37 @@
+@import "variables";
+
+.card {
+  background-color: $white;
+  margin-top: 2rem;
+  border-radius: $border-radius-size;
+  box-shadow: -0.063rem 1rem 1.875rem -1rem $black;
+
+  .card__image {
+    position: relative;
+    height: 15rem;
+    margin-bottom: 2.188rem;
+    border-top-left-radius: $border-radius-size;
+    border-top-right-radius: $border-radius-size;
+    background: url("/assets/images/tokio.jpg");
+    img {
+      position: absolute;
+      top: -1.5rem;
+      right: -1.5rem;
+    }
+  }
+
+  .card__main {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $main-color;
+    padding: 0 1rem;
+  }
+
+  .card__city {
+    font-size: 2rem;
+    color: $black;
+    font-weight: 900;
+    padding: 1rem;
+  }
+}
